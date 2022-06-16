@@ -45,7 +45,7 @@ def load_data(data_path, train=True):
         return test_x
 
 
-def output2csv(pred_y, class_dict, file_name='20214031_leesemi_simple_seq.answer.csv'):
+def output2csv(pred_y, class_dict, file_name='simple_seq.answer.csv'):
     with open(file_name, 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['id', 'pred'])

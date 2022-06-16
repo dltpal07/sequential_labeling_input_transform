@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import math
 
+
 class FFNN(nn.Module):
     def __init__(self, vocab_size):
         super(FFNN, self).__init__()
@@ -32,6 +33,7 @@ class CustomFFNN(nn.Module):
         self.ReLU = nn.ReLU(True)
         self.Dropout = nn.Dropout()
         self.Sigmoid = nn.Sigmoid()
+
     def forward(self, x):
         feature_vector = x.view(x.size(0), -1)
         feature_vector1 = torch.mm(feature_vector, self.layer1)
