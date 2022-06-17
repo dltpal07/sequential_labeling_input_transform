@@ -6,3 +6,8 @@
 
 ## model
 3 layer Feed Forward Neural Network
+
+## train the model
+~~~
+python main.py 
+~~~
